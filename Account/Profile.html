@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/Profile.css">
+    <link rel="stylesheet" href="./asset/themify-icons/themify-icons.css">
+    <title>Thông tin cá nhân</title>
+</head>
+<body>
+    <div class="header">
+        <a href="#"><img src="images/brandlogocoloredi244-saie.svg" alt=""></a>
+        <a style="padding-right: 150px; padding-top: 10px;" href="Login.html"><i style="padding-left: 12px; size: 10%;" class="ti-user"><br></i>Login</a>
+    </div>
+    <div class="container">
+        <div class="container-left">
+            <div class="menu">
+                <img src="./images/Profile.png" alt="">
+                <h1>Nguyễn Văn A</h1>
+                <div class="button">
+                    <button class="btn1"><a href="#">Trang chủ</a></button>
+                    <button class="btn2"><a href="#">Đăng xuất</a></button>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="title">
+                <span class="title1">Hồ sơ của tôi</span>
+                <br>
+                <span>Quản lý thông tin hồ sơ để bảo mật</span>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="menu-left">
+                        <div class="title2">Fullname</div>
+                        <input type="text" name="txtfullname" id="txtfullname" value="ABC" disabled>
+                        <div class="title2">Phone number</div>
+                        <input type="text" name="txtPhoneNumber" id="txtPhoneNumber" value="XYZ" disabled>
+                        <div class="title2">Password</div>
+                        <input type="text" name="txtPassword" id="txtPassword" value="123456789" disabled>
+                        <br>
+                        <br>
+                        <input class="btn" type="submit" name="btbsubmit" value="Chỉnh sửa" onclick="enableInputs()">
+                        <input class="btn" type="submit" name="btbsubmit" value="Lưu" onclick="disableInputs()">
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./images/Profile.png" alt="">
+                    <input type="file" name="" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function enableInputs() {
+        document.getElementById("txtPhoneNumber").removeAttribute("disabled");
+        document.getElementById("txtPassword").removeAttribute("disabled");
+    }
+
+    function disableInputs() {
+        document.getElementById("txtPhoneNumber").setAttribute("disabled", "true");
+        document.getElementById("txtPassword").setAttribute("disabled", "true");
+    }
+    </script>
+</body>
+</html>
